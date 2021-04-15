@@ -17,9 +17,6 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
-
-
         private void InitializeComponent()
         {
             this.tboxID = new System.Windows.Forms.TextBox();

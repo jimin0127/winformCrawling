@@ -26,7 +26,7 @@ namespace winformCrawling
         private ChromeOptions _options = null;
         private ChromeDriver _driver = null;
 
-        List<string> Lsrc = null; 
+        List<string> Lsrc = null;
         int i = 0; // 현재 배열 위치
 
         public Form1()
@@ -47,31 +47,27 @@ namespace winformCrawling
             string pw = tboxPW.Text;
 
             _driver = new ChromeDriver(_driverService, _options);
-            _driver.Navigate().GoToUrl("https://www.daum.net");  
+            _driver.Navigate().GoToUrl("https://www.daum.net");
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
-            var element = _driver.FindElementByXPath("//*[@id='inner_login']/a[1]");   
+            var element = _driver.FindElementByXPath("//*[@id='inner_login']/a[1]");
             element.Click();
 
             Thread.Sleep(3000);
 
             // ID 입력
-            element = _driver.FindElementByXPath("//*[@id='id']");    
+            element = _driver.FindElementByXPath("//*[@id='id']");
             element.SendKeys(id);
 
             // PW 입력
-            element = _driver.FindElementByXPath("//*[@id='inputPwd']");   
+            element = _driver.FindElementByXPath("//*[@id='inputPwd']");
 
             element.SendKeys(pw);
 
             element = _driver.FindElementByXPath("//*[@id='loginBtn']");  // 로그인 버튼
             element.Click();
         }
-
-        #endregion
-
-
-        #region Image 검색
+    
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
