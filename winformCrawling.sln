@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winformCrawling", "winformCrawling\winformCrawling.csproj", "{E84CC635-0358-4031-A3D1-73BBADC77263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E84CC635-0358-4031-A3D1-73BBADC77263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84CC635-0358-4031-A3D1-73BBADC77263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84CC635-0358-4031-A3D1-73BBADC77263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84CC635-0358-4031-A3D1-73BBADC77263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {493B1497-1485-4A19-8AE8-2E2B5C99D71E}
+	EndGlobalSection
+EndGlobal
